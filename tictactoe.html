@@ -7,6 +7,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <h1 class="row justify-content-center">Tic Tac Toe Game</h1>
+        <div class="row">
+            <div class="col-sm-4 border">
+                <a href="https://github.com/enigmaticIconoclast/TicTacToe" class="btn btn-primary">View Repo</a>
+                <a href="/index.html" class="btn btn-primary">Return</a>
+            </div>
+            <div class="col-sm-8 border" >
+                <div>
+                    This Tic Tac Toe Game project had the goal of building the classic game Tic Tac Toe in a web based format. The game is played on a 3x3 grid and players take
+                    turns placing either an X or an O. The first player to get 3 in a row be it diagonal, horizontal, or vertical wins.
+                </div>
+                <div>
+                    The game is run using React and a built component called "Board". This board handles the players actions and is used to display the current players turn as
+                    well as the outcome should someone win.
+                </div>
+                <h3>Utilized Technology</h3>
+                <ul>
+                    <li>React: The components making up the user interface are constructed using React. This library offers added structure when rendering components in real time
+                        using JavaScript
+                    </li>
+                    <li>JavaScript: All game logic is programmed in JavaScript due to its universality in the world of webpages.</li>
+                </ul>
+                <h3>Tech Challanges</h3>
+                <ul>
+                    <li>Persistance: Due to the fact the component was updating in real time and refreshing the UI, the client side server needed to keep track of its State.
+                    </li>
+                    <li>Winning: A way of determing a winner or if there was a tie was crucial to turn this project into a proper game.</li>
+                </ul>
+                <img src="/Images/tictactoe-codeSnippit.png">
+                <div></div>
+                <img src="/Images/TicTacToeDemo.gif">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

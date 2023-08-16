@@ -7,6 +7,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <h1 class="row justify-content-center">Connect 4 Game</h1>
+        <div class="row">
+            <div class="col-sm-4 border">
+                <a href="https://github.com/enigmaticIconoclast/Connect4" class="btn btn-primary">View Repo</a>
+                <a href="/index.html" class="btn btn-primary">Return</a>
+            </div>
+            <div class="col-sm-8 border" >
+                <div>
+                    The Connect 4 Project was a continuation of the TicTacToe game but this time utilizing the entire MERN(MongoDB, Express, React, Node) stack. Mongo and an
+                    express server were the main additions to the project in order to track records.
+                </div>
+                <div>
+                    The game delivers on its goals which were to expand the TicTacToe UI to fully represent the Connect 4 game. Like before the Players take turns, however now they
+                    are dropping 'discs' rather than placing letters. The discs would fall down their column until they meet either the bottom or another piece. The first player to
+                    get 4 in a row would be the winner. 
+                </div>
+                <h3>Utilized Technology</h3>
+                <ul>
+                    <li>React: The components making up the user interface are constructed using React. This library offers added structure when rendering components in real time
+                        using JavaScript
+                    </li>
+                    <li>JavaScript: All game logic is programmed in JavaScript due to its universality in the world of webpages.</li>
+                    <li>Express: A web application framework for Node.js that acted as the 'backend' server of this application. It was used as the runner and processor between the
+                        client-side server, and the Mongo Database storing long term.
+                    </li>
+                    <li>MongoDB: A NoSQL database being run virtually through the cloud rather than locally by the server. Acted as long term storage for all projects moving forward
+                    </li>
+                    <li>Node.js: The technology used to host the servers both client-side and server-side</li>
+                </ul>
+                <h3>Tech Challanges</h3>
+                <ul>
+                    <li>Logic: A major hurdle of this project was ensuring the pieces would fall into their proper place no matter where the player clicked in a column.
+                        This was solved by treating the 'squares' as an array and looping through options that would be beneath the current square until a space with no
+                        further decent was found.
+                    </li>
+                    <img src="/Images/Connect4Gravity.png">
+                    <li>Storage: Ensuring the highscores were properly saved and fetchable at any time the player moved to the highscores page required a call and response
+                        handler to be programed on the express side. Thus any time the client needed to "post" a new high score, or fetch the table of records, the server would
+                        be sure to handle it and pass the required data back to the client.
+                    </li>
+                </ul>
+                
+                <img src="/Images/Connect 4 Demmo.gif">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
