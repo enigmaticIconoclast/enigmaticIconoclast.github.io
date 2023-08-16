@@ -15,9 +15,44 @@
                 <a href="/index.html" class="btn btn-primary">Return</a>
             </div>
             <div class="col-sm-8 border" >
-                Description of Project:
-                Code Snipits
-                Screen caps of working project.
+                <div>
+                    This project was significatly larger in scale and unlike the others was done as a group project. The goals of the project were to build an online app where a user
+                    could play the card game Speed in realtime with other plays around the world. This would require, realtime updates on both ends, a match making system, an account
+                    creation and login system, and a chatting features to find players. 
+                </div>
+                <div>
+                    Due to the scale, we needed to break the requirements up to each developer. My main tasks were to create the login and sign up system. I was also tasked with creating
+                    a system to shuffle a deck of cards and distribute them amoungst the players and the piles needed to play speed. This project is still on going and not quite at a playable state.
+                    However much of the structure is built, and future work will allow us to flesh it out more.
+                </div>
+                <h3>Utilized Technology</h3>
+                <ul>
+                    <li>React: The components making up the user interface are constructed using React. This library offers added structure when rendering components in real time
+                        using JavaScript
+                    </li>
+                    <li>JavaScript: All game logic is programmed in JavaScript due to its universality in the world of webpages.</li>
+                    <li>Express: A web application framework for Node.js that acted as the 'backend' server of this application. It was used as the runner and processor between the
+                        client-side server, and the Mongo Database storing long term.
+                    </li>
+                    <li>MongoDB: A NoSQL database being run virtually through the cloud rather than locally by the server.
+                    </li>
+                    <li>Node.js: The technology used to host the servers both client-side and server-side</li>
+                    <li>Sha-256: A library used to hash the passwords to keep them safe as they moved accross the network.</li>
+                    <li>Socket.io: The intoduction of two connections to the server interacting with one another required us to intoduce websockets into the project to make sure all users
+                        are updated in real time of any changes.
+                    </li>
+                    <li>Bootstrap: A lightweight and easy to implement package that offers compact CSS to augment HTML and give off a professional look.</li>
+                </ul>
+                <h3>Tech Challanges</h3>
+                <ul>
+                    <li>Presentation: The goal of this project was to make it look professional and clean, thus we needed to pay close attention to how we built the components and what
+                        the user saw and interacted with.
+                    </li>
+                    <li>State Tracking: The complexity of the states in this project required us to build multiple states as well as lean on sessions and cookies to help track connections.</li>
+                </ul>
+                <img src="Images/Login Page Speed.png">
+                <div></div>
+                <img src="/Images/Login Speed example.png">
             </div>
         </div>
     </div>

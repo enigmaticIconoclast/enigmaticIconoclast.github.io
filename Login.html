@@ -15,9 +15,37 @@
                 <a href="/index.html" class="btn btn-primary">Return</a>
             </div>
             <div class="col-sm-8 border" >
-                Description of Project:
-                Code Snipits
-                Screen caps of working project.
+                <div>
+                    The login project had two simple goals, to give more practice with the database, and to become familar with some of the industries best practices around security.
+                    Utilizing the same MERN Stack (MongoDB, Express, React, Node) to build a user friendly experience.
+                </div>
+                <h3>Utilized Technology</h3>
+                <ul>
+                    <li>React: The components making up the user interface are constructed using React. This library offers added structure when rendering components in real time
+                        using JavaScript
+                    </li>
+                    <li>JavaScript: All game logic is programmed in JavaScript due to its universality in the world of webpages.</li>
+                    <li>Express: A web application framework for Node.js that acted as the 'backend' server of this application. It was used as the runner and processor between the
+                        client-side server, and the Mongo Database storing long term.
+                    </li>
+                    <li>MongoDB: A NoSQL database being run virtually through the cloud rather than locally by the server.
+                    </li>
+                    <li>Node.js: The technology used to host the servers both client-side and server-side</li>
+                    <li>Sha-256: A library used to hash the passwords to keep them safe as they moved accross the network.</li>
+                </ul>
+                <h3>Tech Challanges</h3>
+                <ul>
+                    <li>Security Standards: Ensuring the password was only ever passed over the network in a hashed from required most of the work to be handled front end
+                        with only calling the server when absolutely needed. While User Creation was straight forward hashing the password with a salt score and passing both with 
+                        a username to the express server for storage. The login required the client to reach out with the username first to get the salt score, then sending the
+                        hashed password the user entered for validation by the express server.
+                    </li>
+                </ul>
+                <img src="/Images/ExpressLogin.png">
+                <div>
+                    <img src="/Images/ClientLogin.png">
+                </div>
+                <img src="/Images/LoginDemo.gif">
             </div>
         </div>
     </div>
